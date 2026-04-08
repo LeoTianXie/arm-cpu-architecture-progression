@@ -43,12 +43,6 @@ These components were designed to be reusable in later stages of the project.
 
 ## Key figures
 
-### Mux hierarchy
-![Mux hierarchy](../docs/images/components/mux_hierarchy_*.png)
-
-### Decoder hierarchy
-![Decoder hierarchy](../docs/images/components/decoder_hierarchy_*.png)
-
 ### Register file
 ![Register file](../docs/images/components/register_file64x32.png)
 
