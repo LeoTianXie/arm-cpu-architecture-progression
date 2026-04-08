@@ -1,4 +1,3 @@
-```md
 # Stage 1 — Foundational Components
 
 This directory contains the foundational datapath and storage components used in the later CPU implementations.
@@ -45,10 +44,10 @@ These components were designed to be reusable in later stages of the project.
 ## Key figures
 
 ### Mux hierarchy
-![Mux hierarchy](../docs/images/components/mux_hierarchy.png)
+![Mux hierarchy](../docs/images/components/mux_hierarchy_*.png)
 
 ### Decoder hierarchy
-![Decoder hierarchy](../docs/images/components/decoder_hierarchy.png)
+![Decoder hierarchy](../docs/images/components/decoder_hierarchy_*.png)
 
 ### Register file
 ![Register file](../docs/images/components/register_file64x32.png)
@@ -66,6 +65,4 @@ Component tests check:
 - correct arithmetic and logical ALU outputs
 - correct status flag generation
 
-## Why this stage matters
-
-This stage establishes that later CPU behavior rests on verified, understandable hardware blocks rather than unexplained black boxes.
+Note: Most of the module level testbenches are included in the same .sv file as the SystemVerilog codes. Only the regfile.sv and alu.sv have their testbenches in a separate file. My workflow involves running the runlab.do and *_wave.do scripts in ModelSim. Read the comments in runlab.do to run different testbenches. 
